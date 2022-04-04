@@ -45,5 +45,12 @@ body {
 /* Permet d'accoler un élément avant ou après une balise htlm */
 
 .card:before {
-    content: "";
+    /* On récupere le code sur le site html symbols */
+    content: "\2730";
+    /* On positionne l'élément ou on veut */
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    /* Agrandir l'icone toujours en rem */
+    font-size: 2.4rem;
 }
