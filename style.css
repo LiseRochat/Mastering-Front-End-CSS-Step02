@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --color1: #ede8d40;
+    --color1: #ede4d0;
     --color2: pink;
     --color3: #393b4b;
     --color4: rgb(18, 19, 19);
@@ -20,5 +20,15 @@ body {
     height:100vh;
     /* integration d'une fonte family */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Apelle d'une variable couleur */
+    color: var(--color1);
+    /* Reglage FlexBox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.card {
+    background: rgba(0, 0, 0, 0.459);
+    
+}
