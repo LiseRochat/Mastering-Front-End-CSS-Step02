@@ -32,7 +32,8 @@ body {
     /* Couleur avec effet de transparence */
     background: rgba(0, 0, 0, 0.459);
     /* Calcul : largeur de 100% - 50px */
-    width: calc(100% -50px);
+    /* ATTNTION ESPACE autour de l'opérateur arythmitique */
+    width: calc(100% - 50px);
     /* haut gauche/droite bas */
     padding: 20px 20px 6px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.532);
@@ -41,7 +42,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
-/************************************ Pseudo Element After / Before ************************************************/
+/************************************ Pseudo Element After / Before ************************************/
 /* Permet d'accoler un élément avant ou après une balise htlm */
 
 .card:before {
@@ -53,4 +54,16 @@ body {
     right: 20px;
     /* Agrandir l'icone toujours en rem */
     font-size: 2.4rem;
+}
+
+h1{
+    margin-bottom: 24px;
+}
+
+/************************************ Rapelle grid ************************************/
+/* Permet de repartir de maniere tres précise les éléments sur la page */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
