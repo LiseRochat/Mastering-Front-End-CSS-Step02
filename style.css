@@ -207,6 +207,11 @@ button:hover {
     letter-spacing: 3px;
 }
 
+/* Quand on clique sur l'élément */
+button:active {
+    transform: scale(1.2);
+}
+
 button:hover + a,
 a:hover {
     opacity: 1;
