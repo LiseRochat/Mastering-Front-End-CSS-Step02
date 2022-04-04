@@ -29,6 +29,8 @@ body {
 }
 
 .card {
+    /* Couleur avec effet de transparence */
     background: rgba(0, 0, 0, 0.459);
-    
+    /* Calcul : largeur de 100% - 50px */
+    width: calc(100% -50px);
 }
