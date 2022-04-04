@@ -1,3 +1,11 @@
+/* Variables */
+:root {
+    --color1: #ede8d40;
+    --color2: pink;
+    --color3: #393b4b;
+    --color4: rgb(18, 19, 19);
+}
+
 /* Mini Reset */
 * {
     margin: 0;
@@ -13,3 +21,4 @@ body {
     /* integration d'une fonte family */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
