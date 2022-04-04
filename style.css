@@ -75,7 +75,7 @@ h1{
     /* Ombre du polygone, l'ombre reprend exactement la forme du polygone */
     filter: drop-shadow(-1px 6px 3px var(--color2));
     /* Centrer l'élément : le polygone -> METTRE LE parent en GRID !!*/
-    place-self: center;
+    place-self: center left;
 }
 .polygon {
     /* Creation du polygone */
@@ -94,4 +94,14 @@ h1{
 }
  .link > a {
      color:var(--color1);
+ }
+
+ /************************************ AFTER ************************************/
+ .polygon:after {
+     content: "Un texte";
+     /* Je peux le placer ou je veux */
+     position: absolute;
+     color: var(--color2);
+     background: var(--color4);
+     
  }
