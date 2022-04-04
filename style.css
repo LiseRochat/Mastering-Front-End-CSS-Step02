@@ -74,9 +74,13 @@ h1::after {
     bottom: -10px;
     left: -10px;  
     transform: scaleX(0);
+    /* On appelle l'animation déclaré plus bas */
     animation: h1anim 10s ease-in-out forwards;
+    /* De ou par l'animation */
+    transform-origin: center;
 }
 
+/* Declaration de l'animation mot clef: @keyframes + nom de l'animation */
 @keyframes h1anim {
     100% {
         transform: scaleX(1);
@@ -172,6 +176,21 @@ label {
     transition: 0.2s;
     /* Empecher l'utilisateur de slectionner le texte */
     user-select: none;
+}
+
+/* Animation sur le label. Sur le premier label */
+label:first-of-type:hover {
+    /* linear : fluide / alternate : aléatoire */
+    animation: label1 1s infinite linear;
+}
+
+@keyframes label1 {
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .e-mail {
