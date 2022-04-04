@@ -154,6 +154,8 @@ p::selection {
     display: flex;
     justify-content: space-around;
     margin: 20px 0 30px;
+    /* Pour l'animation 3D */
+    perspective: 40px;
 }
 input[type="checkbox"] {
     display: none;
@@ -194,8 +196,21 @@ label:first-of-type:hover {
 }
 
 /* Animation 3D */
-label:nth-child(4) {
+label:nth-child(4):hover {
+    animation: label2 3s infinite linear;
+}
 
+/* Ne pas oublier la perspective sur le parent !! */
+@keyframes label2 {
+    33% {
+        transform: translateZ(30px);
+    }
+    66% {
+        transform: translateZ(-40px);
+    }
+    100% {
+        transform: translateZ(0);
+    }
 }
 
 .e-mail {
