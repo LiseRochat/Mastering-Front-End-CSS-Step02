@@ -207,10 +207,29 @@ button:hover {
     letter-spacing: 3px;
 }
 
+button:hover + a,
+a:hover {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.3s;
+}
+
 /************************************ div link ************************************/
+.cgc {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
 .link {
     margin-top:30px;
 }
- .link > a {
-     color:var(--color1);
- }
+
+a {
+    color:var(--color2);
+    text-align: center;
+    display: block;
+}
+
+a:visited {
+    color: var(--color1);
+}
