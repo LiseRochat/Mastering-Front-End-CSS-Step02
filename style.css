@@ -62,6 +62,7 @@ body {
 h1{
     margin-bottom: 24px;
     position: relative;
+    
 }
 
 h1::after {
@@ -72,6 +73,14 @@ h1::after {
     width: 100%;
     bottom: -10px;
     left: -10px;  
+    transform: scaleX(0);
+    animation: h1anim 10s ease-in-out forwards;
+}
+
+@keyframes h1anim {
+    100% {
+        transform: scaleX(1);
+    }
 }
 
 /************************************ Rapelle grid ************************************/
