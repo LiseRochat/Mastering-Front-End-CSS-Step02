@@ -41,4 +41,9 @@ body {
     backdrop-filter: blur(5px);
 }
 
-/************************************ After / Before ************************************************/
+/************************************ Pseudo Element After / Before ************************************************/
+/* Permet d'accoler un élément avant ou après une balise htlm */
+
+.card:before {
+    content: "";
+}
