@@ -146,6 +146,8 @@ input[type="checkbox"]:checked + label{
     background: var(--color2);
     color: var(--color3);
     transform: scale(1.1);
+    /* Filtre Luminisoté */
+    filter: brightness(120%);
 }
 
 label {
@@ -156,3 +158,4 @@ label {
     border-radius: 5px;
     transition: 0.2s;
 }
+
