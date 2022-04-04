@@ -123,4 +123,11 @@ h1{
      -webkit-box-orient: vertical;
      -webkit-line-clamp: 4;
      overflow: hidden;
+     text-align: center;
  }
+
+ /* Change la couleur de fond de la sélection du texte */
+p::selection {
+    background: var(--color2);
+    color: var(--color3);
+}
