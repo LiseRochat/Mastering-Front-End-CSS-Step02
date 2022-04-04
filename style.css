@@ -278,12 +278,14 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
     transition: 0.3s;
+    visibility: visible;
 }
 
 /************************************ div link ************************************/
 .cgc {
     opacity: 0;
     transform: translateY(20px);
+    visibility: hidden;
 }
 
 .link {
