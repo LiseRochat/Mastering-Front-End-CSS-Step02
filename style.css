@@ -157,6 +157,8 @@ label {
     padding: 10px;
     border-radius: 5px;
     transition: 0.2s;
+    /* Empecher l'utilisateur de slectionner le texte */
+    user-select: none;
 }
 
 .e-mail {
