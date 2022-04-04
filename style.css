@@ -159,3 +159,24 @@ label {
     transition: 0.2s;
 }
 
+.e-mail {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Je selectionne l'input present dans la classe e-mail */
+.e-mail input {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--color1);
+    width: 35%;
+    /* Condition sur la largeur (responsive) */
+    max-width: 300px;
+    min-width: 180px;
+}
+
