@@ -117,4 +117,10 @@ h1{
  p {
      /* Ecartement entre les lignes */
      line-height: 26px;
+     margin: 20px 0;
+     /* Parametre le nombre de ligne visibles */
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     -webkit-line-clamp: 4;
+     overflow: hidden;
  }
