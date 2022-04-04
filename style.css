@@ -70,5 +70,10 @@ h1{
 
 /************************************ Polygone ************************************/
 .polygon {
-
+    /* Creation du polygone */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    /* Couleur au polygone */
+    background: yellow;
+    /* On lui donne une taille */
+    height: 100px;
 }
