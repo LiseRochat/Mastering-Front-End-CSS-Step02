@@ -184,4 +184,11 @@ label {
 input[type="text"]:focus {
     background:transparent;
     border: 3px solid var(--color2);
+    border-radius: 150px;
+}
+
+input[type="text"]::placeholder {
+    color: var(--color2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
