@@ -98,10 +98,23 @@ h1{
 
  /************************************ AFTER ************************************/
  .polygon:after {
-     content: "Un texte";
-     /* Je peux le placer ou je veux */
-     position: absolute;
-     color: var(--color2);
-     background: var(--color4);
-     
+    content: "Un texte";
+    /* Je peux le placer ou je veux */
+    position: absolute;
+    color: var(--color2);
+    background: var(--color4);
+    /* Centrer un élément en position absolute */
+    top: 35%;
+    left: 50%;
+    /* Centrer en son centre */
+    transform: translate(-50%) rotate(344deg);
+    width: 90px;
+    padding: 4px;
+    text-align: center;
+ }
+
+ /************************************ Text ************************************/
+ p {
+     /* Ecartement entre les lignes */
+     line-height: 26px;
  }
