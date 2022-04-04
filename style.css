@@ -180,3 +180,8 @@ label {
     min-width: 180px;
 }
 
+/************************************ Focus ************************************/
+input[type="text"]:focus {
+    background:transparent;
+    border: 3px solid var(--color2);
+}
