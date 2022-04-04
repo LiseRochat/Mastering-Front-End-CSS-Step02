@@ -72,8 +72,9 @@ h1{
 .polygon {
     /* Creation du polygone */
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    /* Gradient */
     /* Couleur au polygone */
-    background: yellow;
+    background: linear-gradient(135deg, var(--color2) 0%, var(--color1) 100%);
     /* On lui donne une taille */
     height: 100px;
 }
