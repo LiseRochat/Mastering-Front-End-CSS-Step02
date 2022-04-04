@@ -26,9 +26,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.card {
+.card,
+.link {
     /* Couleur avec effet de transparence */
     background: rgba(0, 0, 0, 0.459);
     /* Calcul : largeur de 100% - 50px */
@@ -69,6 +71,12 @@ h1{
 }
 
 /************************************ Polygone ************************************/
+.polygon-container {
+    /* Ombre du polygone, l'ombre reprend exactement la forme du polygone */
+    filter: drop-shadow(-1px 6px 3px var(--color2));
+    /* Centrer l'élément : le polygone -> METTRE LE parent en GRID !!*/
+    place-self: center;
+}
 .polygon {
     /* Creation du polygone */
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -77,4 +85,13 @@ h1{
     background: linear-gradient(135deg, var(--color2) 0%, var(--color1) 100%);
     /* On lui donne une taille */
     height: 100px;
+    width: 100px;
 }
+
+/************************************ div link ************************************/
+.link {
+    margin-top:30px;
+}
+ .link > a {
+     color:var(--color1);
+ }
