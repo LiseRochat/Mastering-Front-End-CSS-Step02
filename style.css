@@ -169,7 +169,7 @@ label {
     padding: 10px;
     border-radius: 5px;
     outline: none;
-    border: none;
+    border: 3px solid transparent;
     transition: 0.3s;
     text-align: center;
     font-size: 1.1rem;
