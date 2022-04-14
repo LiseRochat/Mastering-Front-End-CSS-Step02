@@ -15,7 +15,7 @@
 
 body {
     /* center/cover : photo à l'echelle */
-    background: url('./assets/bg.jpg') center/cover;
+    background: url('../assets/bg.jpg') center/cover;
     /* Le body prend toute la taille de l'écran de l'utilisateur */
     height:100vh;
     /* integration d'une fonte family */
@@ -29,6 +29,7 @@ body {
     flex-direction: column;
     /* Tout ce qui dépasse est caché */
     overflow:hidden;
+    margin: 100px 0;
 }
 
 .card,
